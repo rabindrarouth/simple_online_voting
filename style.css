@@ -1,0 +1,30 @@
+body{
+ text-align: center;
+ background-color: rgb(139, 213, 64);
+}
+#headSection{
+  padding: 10px;
+}
+#headsection h1{
+  unicode-bidi: isolate;
+}
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+#dropbox{
+  padding: 10px;
+  border-radius: 5px;
+  width:20%;
+}
+
+#loginbt{
+  padding: 6px;
+  border-radius: 5px;
+  
+  color: rgb(14, 14, 61);
+  border-radius: 5px;
+}

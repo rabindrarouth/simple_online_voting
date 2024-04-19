@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title> Online Voting System - Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <style> 
+         #address{
+            width: 50%;
+         }
+
+         #image{
+            border: 3ch; black;
+   padding: 10px;
+}
+        
+#role{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#Reg{
+    padding: 6px;
+    font-size: 15px;
+  
+  background-color:aqua;
+  color: rgb(14, 14, 61);
+  border-radius: 5px;
+}
+
+         </style>
+         <div id = "headersection">
+            <h1>Online Voting System</h1>
+         </div>
+        <hr>
+
+        <div id="bodysection">
+            <h3>Registration</h3>
+
+        <from action="webt/api/register.php" method="POST">
+            Name: <input type="text" name="name" placeholder="Enter Name"> &nbsp;
+            Mobile Number: <input type="number" name="mobile" placeholder="Enter Mobile"> <br><br>
+            New Password: <input type="password" name="password" placeholder="New Password"> &nbsp;
+            Confirm Password: <input type="cpassword" name="cpasssword" placeholder="Confirm Password"><br> <br>
+            Address: <input id ="address" type="text" name="Address" placeholder="Enter Address"><br><br>
+            <div id = "image">
+            Upload Image: <input type="file" name="photo"   ><br> <br>
+            </div>
+             <div id="role">
+
+             </div>
+           Select Role: <select name="role">
+                <option value="1">voter</option>
+                <option value="2">Group</option>
+            </select> 
+        </div>
+            <br> <br>
+            &nbsp;&nbsp;&nbsp;
+        <div>
+                <button id = "register" type = "register">Register</button> 
+                </div>
+                      <br> <br>
+            Already User? <a href="index.html" >Login Here</a>
+        </from>
+        </div>
+    </body>
+</html>
